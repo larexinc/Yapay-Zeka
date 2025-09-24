@@ -3,18 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Chat</title>
+    <title>Instagram Clone</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="chat-container">
-        <div id="messages" class="messages"></div>
-        <div class="input-container">
-            <input type="text" id="userInput" placeholder="Mesajınızı yazın..." />
-            <button id="sendBtn">Gönder</button>
+    <header>
+        <div class="logo">InstaClone</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Ara...">
         </div>
-    </div>
+        <div class="nav-icons">
+            <span>🏠</span>
+            <span>✉️</span>
+            <span>➕</span>
+            <span>❤️</span>
+            <span>👤</span>
+        </div>
+    </header>
 
-    <script src="script.js"></script>
+    <main>
+        <aside class="sidebar">
+            <h3>Hikayeler</h3>
+            <div class="stories">
+                <div class="story">User1</div>
+                <div class="story">User2</div>
+                <div class="story">User3</div>
+            </div>
+        </aside>
+
+        <section class="feed">
+            <div class="post">
+                <div class="post-header">
+                    <span>User1</span>
+                </div>
+                <img src="https://via.placeholder.com/400x300" alt="Post Image">
+                <div class="post-actions">
+                    <span>❤️</span>
+                    <span>💬</span>
+                    <span>📤</span>
+                </div>
+                <div class="post-caption">
+                    <b>User1</b> Bu bir örnek gönderidir.
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="post-header">
+                    <span>User2</span>
+                </div>
+                <img src="https://via.placeholder.com/400x300" alt="Post Image">
+                <div class="post-actions">
+                    <span>❤️</span>
+                    <span>💬</span>
+                    <span>📤</span>
+                </div>
+                <div class="post-caption">
+                    <b>User2</b> Başka bir örnek gönderi.
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
