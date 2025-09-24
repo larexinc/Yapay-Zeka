@@ -8,60 +8,32 @@ body {
   display: flex;
   height: 100vh;
 }
-
-/* Sunucular */
 .servers {
-  width: 70px;
+  width: 200px;
   background: #202225;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 10px 0;
+  padding: 10px;
 }
-.server {
-  width: 50px;
-  height: 50px;
-  background: #36393f;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 15px;
-  cursor: pointer;
-  font-size: 24px;
-}
-.server.active,
-.server:hover {
-  background: #5865f2;
-}
-
-/* Kanallar */
-.channels {
-  width: 220px;
+#serverList button {
+  width: 100%;
+  margin-bottom: 5px;
   background: #2f3136;
-  padding: 15px;
-  box-sizing: border-box;
-}
-.channels h2 {
-  margin-top: 0;
-  font-size: 18px;
-  margin-bottom: 10px;
-}
-.channels ul {
-  list-style: none;
-  padding: 0;
-}
-.channels li {
+  border: none;
+  color: #fff;
   padding: 8px;
-  border-radius: 4px;
   cursor: pointer;
+  border-radius: 4px;
 }
-.channels li.active,
-.channels li:hover {
-  background: #40444b;
+#newServerBtn {
+  background: #5865f2;
+  border: none;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: auto;
 }
-
-/* Sohbet */
 .chat {
   flex: 1;
   display: flex;
@@ -69,22 +41,26 @@ body {
   background: #36393f;
 }
 .chat-header {
+  padding: 10px;
   background: #2f3136;
-  padding: 10px 15px;
   font-weight: bold;
-  border-bottom: 1px solid #202225;
+  display: flex;
+  justify-content: space-between;
 }
 .messages {
   flex: 1;
-  padding: 15px;
+  padding: 10px;
   overflow-y: auto;
 }
 .msg {
   margin-bottom: 8px;
 }
 .user {
-  color: #7289da;
   font-weight: bold;
+  color: #7289da;
+}
+.user.nitro {
+  color: #f04747; /* Nitro rengi */
 }
 .chat-input {
   display: flex;
@@ -93,35 +69,40 @@ body {
 }
 .chat-input input {
   flex: 1;
-  padding: 10px;
-  border: none;
+  padding: 8px;
   border-radius: 4px;
+  border: none;
   background: #40444b;
   color: #fff;
 }
 .chat-input button {
   margin-left: 10px;
-  padding: 10px 20px;
+  padding: 8px 20px;
   background: #5865f2;
   border: none;
   border-radius: 4px;
   color: #fff;
   cursor: pointer;
 }
-
-/* Kullanıcılar */
-.users {
-  width: 150px;
+.nitro {
+  padding: 10px;
   background: #2f3136;
-  padding: 15px;
+  display: flex;
 }
-.users h2 {
-  margin-top: 0;
+.nitro input {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  background: #40444b;
+  color: #fff;
 }
-.users ul {
-  list-style: none;
-  padding: 0;
-}
-.users li {
-  padding: 5px 0;
+.nitro button {
+  margin-left: 10px;
+  padding: 8px 20px;
+  background: #f04747;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
 }
