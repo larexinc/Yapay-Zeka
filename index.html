@@ -1,26 +1,49 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Typing Speed Test</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discord Lite</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Typing Speed Test</h1>
-        <div class="quote-container">
-            <p id="quote">Başlamak için metni yazın...</p>
-        </div>
-        <textarea id="inputText" placeholder="Buraya yazın..." oninput="startTest()"></textarea>
-        <div class="stats">
-            <span id="timer">00:00</span>
-            <span id="wpm">WPM: 0</span>
-            <span id="accuracy">Doğruluk: 0%</span>
-        </div>
-        <button onclick="resetTest()">Yeniden Başlat</button>
+  <div class="app">
+    <!-- Sunucu ikonları -->
+    <div class="servers">
+      <div class="server active">🏠</div>
+      <div class="server">🎮</div>
+      <div class="server">🎵</div>
+      <div class="server">➕</div>
     </div>
 
-    <script src="script.js"></script>
+    <!-- Kanal listesi -->
+    <div class="channels">
+      <h2>Kanallar</h2>
+      <ul>
+        <li class="active" onclick="changeChannel('genel')"># genel</li>
+        <li onclick="changeChannel('oyun')"># oyun</li>
+        <li onclick="changeChannel('muzik')"># müzik</li>
+      </ul>
+    </div>
+
+    <!-- Sohbet alanı -->
+    <div class="chat">
+      <div class="chat-header"># <span id="currentChannel">genel</span></div>
+      <div id="messages" class="messages"></div>
+      <div class="chat-input">
+        <input type="text" id="msgInput" placeholder="Mesajınızı yazın...">
+        <button onclick="sendMsg()">Gönder</button>
+      </div>
+    </div>
+
+    <!-- Kullanıcı listesi -->
+    <div class="users">
+      <h2>Kullanıcılar</h2>
+      <ul id="userList">
+        <li>Sen</li>
+      </ul>
+    </div>
+  </div>
+  <script src="app.js"></script>
 </body>
 </html>
