@@ -3,65 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Instagram Clone</title>
+    <title>Typing Speed Test</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="logo">InstaClone</div>
-        <div class="search-bar">
-            <input type="text" placeholder="Ara...">
+    <div class="container">
+        <h1>Typing Speed Test</h1>
+        <div class="quote-container">
+            <p id="quote">Başlamak için metni yazın...</p>
         </div>
-        <div class="nav-icons">
-            <span>🏠</span>
-            <span>✉️</span>
-            <span>➕</span>
-            <span>❤️</span>
-            <span>👤</span>
+        <textarea id="inputText" placeholder="Buraya yazın..." oninput="startTest()"></textarea>
+        <div class="stats">
+            <span id="timer">00:00</span>
+            <span id="wpm">WPM: 0</span>
+            <span id="accuracy">Doğruluk: 0%</span>
         </div>
-    </header>
+        <button onclick="resetTest()">Yeniden Başlat</button>
+    </div>
 
-    <main>
-        <aside class="sidebar">
-            <h3>Hikayeler</h3>
-            <div class="stories">
-                <div class="story">User1</div>
-                <div class="story">User2</div>
-                <div class="story">User3</div>
-            </div>
-        </aside>
-
-        <section class="feed">
-            <div class="post">
-                <div class="post-header">
-                    <span>User1</span>
-                </div>
-                <img src="https://via.placeholder.com/400x300" alt="Post Image">
-                <div class="post-actions">
-                    <span>❤️</span>
-                    <span>💬</span>
-                    <span>📤</span>
-                </div>
-                <div class="post-caption">
-                    <b>User1</b> Bu bir örnek gönderidir.
-                </div>
-            </div>
-
-            <div class="post">
-                <div class="post-header">
-                    <span>User2</span>
-                </div>
-                <img src="https://via.placeholder.com/400x300" alt="Post Image">
-                <div class="post-actions">
-                    <span>❤️</span>
-                    <span>💬</span>
-                    <span>📤</span>
-                </div>
-                <div class="post-caption">
-                    <b>User2</b> Başka bir örnek gönderi.
-                </div>
-            </div>
-        </section>
-    </main>
+    <script src="script.js"></script>
 </body>
 </html>
