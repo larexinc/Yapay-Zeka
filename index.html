@@ -1,42 +1,16 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Discord Mini Clone</title>
-  <link rel="stylesheet" href="style.css"/>
-  <!-- Firebase SDK -->
-  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nah Alırsın</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="app">
-    <!-- Sol Sunucu listesi -->
-    <div class="servers">
-      <div id="serverList"></div>
-      <button id="newServerBtn">➕ Sunucu Oluştur</button>
-    </div>
-
-    <!-- Kanal / Mesaj alanı -->
-    <div class="chat">
-      <div class="chat-header">
-        <span id="currentServer">Sunucu Yok</span>
-        <span id="userName"></span>
-      </div>
-      <div class="messages" id="messages"></div>
-      <div class="chat-input">
-        <input type="text" id="msgInput" placeholder="Mesajınızı yazın...">
-        <button id="sendBtn">Gönder</button>
-      </div>
-      <div class="nitro">
-        <input type="text" id="nitroCode" placeholder="Nitro kodunu gir...">
-        <button id="nitroBtn">Aktif Et</button>
-      </div>
+  <div class="container">
+    <div class="image-box">
+      <img src="images/koyresmi.jpg" alt="Köy Fotoğrafı">
     </div>
   </div>
-
-  <script src="config.js"></script>
-  <script src="app.js"></script>
 </body>
 </html>
